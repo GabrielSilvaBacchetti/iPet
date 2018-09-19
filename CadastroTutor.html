@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro Tutor(a)</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<div>
+	    		<a href="index.html">
+	    		<img src="imagens/IpetIcon.png"  align="center"id="Icon" align="left"></a>
+	    	</div>	
+			<input type="checkbox" id="button_menu">
+			<label for="button_menu">&#9776;</label>
+			<nav #id="menu" class="menu">
+	    		<ul>
+	    			<li><a href="#">Log in</a>
+	    			    <ul>
+	    			    	<li><a href="#">Tutor(a)</a></li>
+	    			    	<li><a href="#">Veterinário(a)</a></li>	
+	    			    </ul>
+	    			</li>
+	    			<li><a href="#">Criar conta</a>
+	    				<ul>
+	    			   		<li><a href="CadastroTutor.html">Tutor(a)</a></li>
+	    			    	<li><a href="CadastroVet.html">Veterinário(a)</a></li>
+	    			    </ul>
+	    			</li>
+	    			<li><a href="#">Perfil</a></li>
+	    			<li><a href="index.html">Home</a></li>
+	    		</ul>
+		    </nav>
+	    </div>
+	    <div>
+	    	<h1>Cadastrar-se como:</h1>
+	    </div>
+	    <div class="container">
+	    	<div class="title">
+	    		<h1 align="center">Registre-se como Tutor</h1>
+	    	</div>
+	    	<div id="regInTutor" align="center">
+		    	<div>
+			    	<input type="text" name="Nome" id="name" class="linha1" placeholder="Nome" align="center"></input>
+					<input type="text" name="Sobrenome" id="sobrenome" class="linha1" placeholder="Sobrenome" align="center"></input>
+				</div>
+				<div>
+					<input type="text" name="dia" id="dia" class="linha2" placeholder="Dia de Nascimento" align="center"></input>
+					<select id="mês" class="linha2" name="mês" placeholder="Mês">Mes
+						<option value="01">Janeiro</option>
+						<option value="02">Fevereiro</option>
+						<option value="03">Março</option>
+						<option value="04">Abril</option>
+						<option value="05">Maio</option>
+						<option value="06">Junho</option>
+						<option value="07">Julho</option>
+						<option value="08">Agosto</option>
+						<option value="09">Setembro</option>
+						<option value="10">Outubro</option>
+						<option value="11">Novembro</option>
+						<option value="12">Dezembro</option>
+					</select>
+					<input type="text" name="ano" id="ano" class="linha2" placeholder="Ano" align="center"></input>
+				</div>	
+				<div>
+					<input type="text" name="Senha" class="torre" id="senha" placeholder="Senha" align="center"></input>
+				</div>
+				<div>
+					<input type="text" name="Email" class="torre" id="email" placeholder="Endereço de Email" align="center"></input>
+				</div>
+				<div>
+					<input type="text" name="Cidade" id="cidade" class="torre" placeholder="Cidade" align="center"></input>
+				</div>
+				<div>
+					<input type="text" name="Estado" id="estado" class="torre" placeholder="Estado" align="center"></input>
+				</div>
+				<div id="linha3">
+					<div>
+						<input type="text" name="nomeAnimal" id="nomeAnimal" class="torre" placeholder="Nome do Animal" align="center"></input>
+					</div>
+					<div>
+						<input type="text" name="raça" id="raça" class="torre" placeholder="Raça do Animal" align="center"></input>
+					</div>
+				</div>
+				<nav id="regButton">
+					<button class="regButton" align="center" onclick="function envioDados()">Cadastrar-se no Ipet</button>
+					<button class="regButton" align="center"><a href="index.html">Ja possui uma conta?</a></button>
+				</nav>
+			</div>
+	    </div>
+	    
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

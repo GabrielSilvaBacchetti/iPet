@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;/*ex*/
+    padding: 0;/*ex*/
+}
+
+body {
+	background-repeat: no-repeat;
+	background-color: #253030;/*#4298f4*/
+    margin: 0 auto;
+    height: 1500px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background-color: #303030; /*cores*/
+    position: fixed !important;
+    overflow: hidden !important; 
+}
+
+#Icon {
+	width: 120px;
+	height: 60px;
+	padding: 5px;
+	margin-left: 25px;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+label[for="button_menu"]{
+	background-color: #303030;
+	color: #fff;
+	font-family: 'Arial', 'Verdana', 'Times';
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+#wellcome {
+	background-color: #4095EF;
+	border-color: black;
+	font-size: 35px;
+	padding: 10px;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+	border-radius: 20px;
+	border-style: solid;
+	position: center;
+}
+
+#button_menu{
+	display: none;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+label[for="button_menu"]{
+	display: none;
+	padding: 3px;
+	//*margin-right: 100%;
+	margin-left: 85%;               TOCAR DE PÒSIÇÂO          */     
+}
+
+@media(max-width: 800px){
+
+	.navbar{
+		height: 50px;
+		position: fixed !important;
+        overflow: hidden !important;
+	}
+
+    #Icon{
+		width: 100px;
+		height: 50px;
+		margin-left: 125px;
+		position: fixed !important;
+	    overflow: hidden !important;
+    }
+
+    label[for="button_menu"]{
+        display: block;
+	}
+
+	#button_menu:checked ~ .menu{
+		margin-right: 0;
+		margin-left: 0;
+		height: 45px;
+		position: fixed !important;
+	    overflow: hidden !important;
+	}
+
+	#button_menu:checked ~ .menu ul li{
+		width: 90px;                           /* IMPORTANTE! */
+	}
+
+	#button_menu:checked ~ .menu a{
+		font-size: 13.5px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-top: 30px;
+	}
+
+	#button_menu:checked ~ .menu ul li a{
+		font-size: 12.5px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-top: 0;
+	}
+
+	.menu{
+		width: 25px;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+
+	.menu a{
+		padding: 5px;
+		display: block;
+		font-size: 15px;
+		text-decoration: none;
+		text-align: center;
+		background-color: #303030;
+		color: #fff;
+	}
+
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul li a{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0px;
+		transition: all .4s;position: 
+	}
+
+	.menu ul li:hover ul{
+		visibility: visible;
+		height: auto;
+		max-height: 200px;
+    }
+
+    #wellcome{
+        background-color: white; 
+	}
+
+	h2{
+		font-family: 'Arial', 'Verdana', 'Times';
+		font-size: 30px;
+		padding: 5px;
+	    text-align: center;
+	}
+
+	h1{
+		font-size: 35px;
+	}
+
+	#regInTutor .torre{
+       width: 100%;
+	}
+
+	#regInTutor .linha1{
+       	width: 49.25%;
+	}
+
+	#regInTutor .linha2{
+       	width: 32.5%;
+	}
+
+	#regInTutor .regButton{
+		width: 100%;
+	}
+
+	#regInVet .torre{
+       width: 100%;
+	}
+
+	#regInVet .linha1{
+       	width: 49.25%;
+	}
+
+	#regInVet .linha2{
+       	width: 32.5%;
+	}
+
+	#regInVet .regButton{
+		width: 100%;
+	}
+
+	#text_Dog h3{
+		visibility: hidden;
+	}
+
+	#text_Dog h1{
+		visibility: hidden;
+	}
+
+	#img_pets img{
+		width: 100%;
+	}
+
+	#barra_Dog{
+		width: 100%;
+	}
+}
+
+.menu{
+    background-color: #303030;
+    width: 100%;
+    height: 60px;
+    font-family: 'Arial', 'Verdana', 'Times';
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+	padding: 18px;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #303030;
+	color: #fff;
+}
+
+.menu a:hover {
+	background-color: #444444;
+	color: #4298f4;
+	border-bottom: solid 1px #fff;
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul {
+	visibility: visible;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #fff;
+}
+
+.menu ul ul li a {
+	background-color: #4095EF;
+}
+
+.container {
+    width: 50%;
+    min-height: 120vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 20px;
+    position: center;
+}
+
+.title{
+	margin-top: 30px;
+	margin-bottom: 60px;
+	color: #2595f4;
+	font-size: 20px;
+	text-shadow: 1px 2px 1px #000000, 1px 2px 1px #303030;
+    width: 100%;
+    height: 60px;
+    font-family: 'Arial', 'Verdana', 'Times';
+}
+
+#barra_Dog{
+	background-image: url('imagens/dog01.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	margin-top: 5vh;
+	background-color: white;
+}
+
+#text_Dog{                        /* ERRO!! */
+	margin: auto;
+	border-radius: 20px;
+	border: transparent #303030;
+	background-color: #fff1;
+	padding: 5px;
+	margin-left: 60%;
+	color: #2595f4;
+	font-size: 30px;
+	text-shadow: 1px 1px 2px #000000, 2px 1px 1px #303030;
+}
+
+#img_pets{
+	white-space: none;
+	margin-top: 5px;
+}
+
+#barra_Download{
+	width: 100%;
+	height: 35vh;
+	background-color: #303030;
+	color: #fff;
+	font-size: 30px;
+}
+
+#Download{
+	background-color: #4095EF;
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	font-family: 'Arial', 'Verdana', 'Times';
+	font-size: 15px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+#Download:hover{
+	background-color: #404040;
+	color: #4095EF;
+}
+
+#contato{
+	font-size: 50px;
+	color:#4095EF;
+	text-decoration: none;
+	margin-bottom: 2vh;
+	font-family: 'Arial', 'Verdana', 'Times';
+}
+
+#divContato{
+	background-color: #fff;
+	padding: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    } 
+}
+
+#barra{
+	min-height: 75px; 
+}
+
+.torre{
+   margin-top: 10px;
+   font-size: 18px;
+   padding: 5px;
+   width: 50%;
+   background-color: #253034;
+   color: #fff;
+   border: 1px solid #303030;
+   height: 35px;
+}
+
+.linha1{
+   margin-top: 10px;
+   font-size: 18px;
+   padding: 5px;
+   width: 24.6%;
+   background-color: #253034;
+   color: #fff;
+   border: 1px solid #303030;
+   height: 35px;
+}
+
+.linha2{
+   margin-top: 10px;
+   margin-bottom: 15px;
+   font-size: 18px;
+   padding: 5px;
+   width: 15%;
+   background-color: #253034;
+   color: #fff;
+   border: 1px solid #303030;
+   height: 35px;
+}
+
+#linha3{
+   margin-top: 15px;
+}
+
+#email{
+	margin-bottom: 15px;
+}
+
+#regButton{
+	margin-top: 20px; 
+	text-decoration: none;
+}
+
+.regButton{
+	font-size: 18px;
+	margin-top: 5px;
+	padding: 5px;
+	width: 50%;
+	height: 35px;
+	background-color: #2595f4;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+}
+
+.regButton:hover{
+	color: #303030;
+	border: none;
+}
+
+h1 h2 h3 h4{
+	font-family: 'Arial', 'Verdana', 'Times';
+}
+
+a{
+	text-decoration: none;
+	color: #303030;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #253030;
+}
+
+#whitebarr{
+	background-color: #fff;
+	width: 100%;
+	height: 80px;
+}

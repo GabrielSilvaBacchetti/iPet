@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;/*ex*/
+    padding: 0;/*ex*/
+}
+
+body {
+	background-repeat: no-repeat;
+	background-color: #253030;/*#4298f4*/
+    margin: 0 auto;
+    height: 12000px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background-color: #303030; /*cores*/
+    position: fixed !important;
+    overflow: hidden !important; 
+}
+
+#Icon {
+	width: 120px;
+	height: 60px;
+	padding: 5px;
+	margin-left: 25px;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+label[for="button_menu"]{
+	background-color: #303030;
+	color: #fff;
+	font-family: 'Arial', 'Verdana', 'Times';
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+#wellcome {
+	background-color: #4095EF;
+	border-color: black;
+	font-size: 35px;
+	padding: 10px;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+	border-radius: 20px;
+	border-style: solid;
+	position: center;
+}
+
+#button_menu{
+	display: none;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+label[for="button_menu"]{
+	display: none;
+	padding: 3px;
+	margin-right: 100%;
+	margin-left: 85%;
+}
+
+@media(max-width: 800px){
+
+	.navbar{
+		height: 7vh;
+		position: fixed !important;
+        overflow: hidden !important;
+	}
+
+    #Icon{
+		width: 100px;
+		height: 50px;
+		margin-left: 10px;
+		position: fixed !important;
+	    overflow: hidden !important;
+    }
+
+    label[for="button_menu"]{
+        display: block;
+	}
+
+	#button_menu:checked ~ .menu{
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 0;
+		height: 50px;
+	}
+
+	#button_menu:checked ~ .menu ul li{
+		width: 130px;
+	}
+
+	#button_menu:checked ~ .menu a{
+		font-size: 15px;
+		padding: 16px;
+	}
+
+	.menu{
+		width: 25px;
+		margin-top: -100%;
+		transition: all .1s;
+		position: fixed !important;
+        overflow: hidden !important; 
+	}
+
+	.menu a{
+		padding: 5px;
+		display: block;
+		font-size: 15px;
+		text-decoration: none;
+		text-align: center;
+		background-color: #303030;
+		color: #fff;
+	}
+
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul li a{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0px;
+		transition: all .4s;position: 
+	}
+
+	.menu ul li:hover ul{
+		visibility: visible;
+		height: auto;
+		max-height: 200px;
+		position: fixed !important;
+        overflow: hidden !important;  
+    }
+
+    #wellcome{
+        background-color: white; 
+	}
+
+	h2{
+		font-family: 'Arial', 'Verdana', 'Times';
+		font-size: 30px;
+		padding: 5px;
+	    text-align: center;
+	}
+}
+
+.menu{
+    background-color: #303030;
+    width: 100%;
+    height: 60px;
+    font-family: 'Arial', 'Verdana', 'Times';
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: right;
+}
+
+.menu a {
+	padding: 18px;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #303030;
+	color: #fff;
+}
+
+.menu a:hover {
+	background-color: #444444;
+	color: #4298f4;
+	border-bottom: solid 1px #fff;
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul {
+	visibility: visible;
+	position: fixed !important;
+    overflow: hidden !important; 
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #fff;
+}
+
+.menu ul ul li a {
+	background-color: #4095EF;
+}
+
+.container {
+    width: 50%;
+    min-height: 200vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    position: center;
+}
+
+#wellcome {
+	background-color: #4095EF;
+	border-color: black;
+	font-size: 35px;
+	padding: 10px;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+	border-radius: 20px;
+	border-style: solid;
+	position: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    } 
+}
+
+#barra{
+	min-height: 75px; 
+}
+
+table{
+	margin: auto;
+	margin-top: 150px;
+	width: 100%;
+}
+
+td{
+	padding: 15px;
+}
+
+.torre1{
+   font-size: 15px;
+   padding: 5px;
+   width: 80%;
+} 
+
+.torre2{
+   font-size: 15px;
+   padding: 5px;
+   width: 80%;
+} 
+
